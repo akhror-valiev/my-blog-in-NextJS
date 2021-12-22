@@ -1,10 +1,10 @@
 
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {db} from "../../firebase"
 import { useRouter } from 'next/router';
  
-const blogPAge= ({blog, user, allComments}) => {
-    console.log(blog);
+const blogPage= ({blog, user, allComments}) => {
+    
 
 
     const [ myComment, setMyComment] = useState("")
@@ -88,4 +88,4 @@ export async function getServerSideProps({params:{blogid}}) {
 
 
 
-export default blogPAge
+export default blogPage
